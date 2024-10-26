@@ -1,0 +1,33 @@
+1. when we're loading our code to browser
+we don't want to load multiple files but we
+want to laod minimum number of files.
+The role of webpack is, if we have multiple
+javascript files with various dependencies or single 
+dependency it will combine them to single 
+output file. which bydefault name would be 
+main.js in dist folder. this main.js file is 
+output of webpack directory. sometimes it will also named as 
+bundle.js
+
+2. When we run "npm init" package.json file
+created but when we install dependencies
+then package.lock.json file and node module use to be created 
+
+3. "scripts": {
+  "start": "webpack serve"
+}
+
+When you run npm start, this script executes webpack serve, 
+which starts your Webpack development server
+to serve your project files for development purposes.
+
+"webpack serve": This command tells Webpack to start its 
+development server, known as webpack-dev-server. 
+It sets up a local server that serves your application,
+watches for changes in your files, and automatically reloads
+the browser when changes are detected.
+
+
+index.js: Handles setting up module federation and imports the bootstrap.js file after all necessary modules are loaded.
+bootstrap.js: Initializes the application by rendering the root component (e.g., mounting the React app in the DOM).
+
